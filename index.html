@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tebak Angka</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div id="game-container">
+  <h1>Tebak Angka</h1>
+  <div id="level-xp">
+    <p>Level: <span id="level">1</span></p>
+    <div id="xp-bar">
+      <div id="current-xp"></div>
+    </div>
+    <p>EXP: <span id="exp">0</span></p>
+  </div>
+  <p id="message"></p>
+  <input type="number" id="guess-input" min="1" max="100">
+  <button onclick="guessNumber()">Tebak</button>
+  <button onclick="resetGame()">Refresh</button>
+  <button onclick="clearInput()">Hapus</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
